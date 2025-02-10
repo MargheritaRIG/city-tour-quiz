@@ -94,8 +94,8 @@
         function checkAnswer(selected, correct) {
             const feedbackContainer = document.getElementById("feedback-container");
             feedbackContainer.innerHTML = selected === correct ? 
-                "<img src='happy.png' alt='Correct!'>" : 
-                "<img src='sad.png' alt='Wrong!'>";
+                "<img src='images/happy.jpg' alt='Correct!'>" : 
+                "<img src='images/tryagain.jpg' alt='Wrong!'>";
         }
 
         function nextQuestion() {
@@ -103,7 +103,7 @@
             if (currentQuestionIndex < questions.length) {
                 loadQuestion();
             } else {
-                document.getElementById("quiz-container").innerHTML = "<h2>Thank you for participating! Let's now discuss the revealed word: POLDEREN </h2><br><img src='crossword.png' alt='Final Crossword' width='80%'>";
+                document.getElementById("quiz-container").innerHTML = "<h2>Thank you for participating! Let's now discuss the revealed word: POLDEREN </h2><br><img src='images/crossword.png' alt='Final Crossword' width='80%'>";
             }
         }
 
